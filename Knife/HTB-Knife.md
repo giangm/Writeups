@@ -7,11 +7,10 @@ keywords: [HTB, CTF, Hack The Box, Security]
 lang: "en"
 titlepage: true
 title-page-color: "141d2b"
-titlepage-rule-color: "11b925"
-titlepage-text-color: "FFFFFF"
+titlepage-rule-color: "b91111"
+titlepage-text-color: "000000"
 toc: true
 toc-own-page: true
-titlepage-background: "./images/bg.pdf"
 ...
 
 # Information Gathering
