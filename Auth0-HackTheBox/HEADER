@@ -1,0 +1,14 @@
+---
+title: "Auth0 - HackTheBox"
+author: Minh Giang
+date: "2021-10-19"
+subject: "CTF Writeup"
+keywords: [HTB, CTF, Hack The Box, Security, Auth0]
+lang: "en"
+titlepage: true
+title-page-color: "141d2b"
+titlepage-rule-color: "b91111"
+titlepage-text-color: "000000"
+toc: true
+toc-own-page: true
+...
