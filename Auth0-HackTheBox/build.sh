@@ -8,7 +8,9 @@ if [ $# -ne 1 ]; then
     exit 1
 fi
 
-cat HEADER > HTB-$1.md && cat README.md >> HTB-$1.md
+cat HEADER > $1.md && cat README.md >> $1.md
 
 ## Create PDF from markdown
-pandoc --pdf-engine=pdflatex  ./HTB-$1.md -o ./pdf/HTB-$1.pdf --from markdown --template eisvogel --listings
+pandoc --pdf-engine=pdflatex  ./$1.md -o ./pdf/$1.pdf --from markdown --template eisvogel --listings
+
+rm $1.md
