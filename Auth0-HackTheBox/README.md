@@ -82,9 +82,9 @@ Now we need to get the timestamp of this command being run. To do that, we can u
 
 Finally, we can now craft the flag using:
 
-attacker's-IP == `192.168.1.9`
-malicious-proc-ID == `2880`
-YYYY-MM-DD == `2021-02-06`
+attacker's-IP == `192.168.1.9`,
+malicious-proc-ID == `2880`,
+YYYY-MM-DD == `2021-02-06`,
 HH:MM:SS == `00:41:29`
 
 The flag is HTB{192.168.1.9_2880_2021-02-06_00:41:29}.
