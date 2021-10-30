@@ -1,8 +1,7 @@
-# OverTheWire - Bandit
-
 ## Level 0 -> Level 1
 `bandit0:bandit0`
-> The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
+
+The password for the next level is stored in a file called readme located in the home directory. Use this password to log into bandit1 using SSH. Whenever you find a password for a level, use SSH (on port 2220) to log into that level and continue the game.
 
 This level is fairly straightforward, I just displayed the contents in the `readme` file.
 ```
@@ -13,10 +12,10 @@ boJ9jbbUNNfktd78OOpsqOltutMc3MY1
 ```
 The password is `boJ9jbbUNNfktd78OOpsqOltutMc3MY1`.
 
-
 ## Level 1 -> Level 2
 `bandit1:boJ9jbbUNNfktd78OOpsqOltutMc3MY1`
-> The password for the next level is stored in a file called - located in the home directory
+
+The password for the next level is stored in a file called - located in the home directory
 
 Since the file is called `-`, we need to provide the relative path to it, as `-` will be interpreted as an option for `cat`.
 ```
@@ -29,7 +28,8 @@ The password is `CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`.
 
 ## Level 2 -> Level 3
 `bandit2:CV1DtqXWVFXTvM2F0k09SHz0YwRINYA9`
-> The password for the next level is stored in a file called spaces in this filename located in the home directory
+
+The password for the next level is stored in a file called spaces in this filename located in the home directory
 
 When dealing with spaces in a file name, we need to use `\` to take the spaces.
 ```
@@ -42,7 +42,8 @@ The password is `UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`.
 
 ## Level 3 -> Level 4
 `bandit3:UmHadQclWmgdLOKQ3YNgjWxGoRMb5luK`
-> The password for the next level is stored in a hidden file in the inhere directory.
+
+The password for the next level is stored in a hidden file in the inhere directory.
 
 First we need to change the directory to `inhere`.
 ```
@@ -64,7 +65,8 @@ The password is `pIwrPrtPN36QITSp3EQaw936yaFoFgAB`.
 
 ## Level 4 -> Level 5
 `bandit4:pIwrPrtPN36QITSp3EQaw936yaFoFgAB`
-> The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
+
+The password for the next level is stored in the only human-readable file in the inhere directory. Tip: if your terminal is messed up, try the “reset” command.
 
 First we need to change the directory to `inhere`.
 ```
@@ -89,11 +91,11 @@ drwxr-xr-x 3 root    root    4096 May  7  2020 ..
 -rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file08
 -rw-r----- 1 bandit5 bandit4   33 May  7  2020 -file09
 ```
+
 It appears that there are 10 files, where we can choose to look through one-by-one, or just simply print all of the contents of each file at once. That can be done with `cat ./*`.
 ```
 bandit4@bandit:~/inhere$ cat ./*
-?/`2ғ?%??rL~5?g??? ???????p,k?;??r*??	?.!??C??J	?dx,?e?)?#??5??
-???r?l$??h?9('???!y?e?#?x?O??=??ly???~??A?f????-E?{???m?????ܗMkoReBOKuIDDepwhWk7jZC0RTdopnAYKh
+...koReBOKuIDDepwhWk7jZC0RTdopnAYKh
 ```
 The password is `koReBOKuIDDepwhWk7jZC0RTdopnAYKh`.
 
@@ -155,6 +157,8 @@ bandit8@bandit:~$ sort data.txt | uniq -u
 UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR
 ```
 
+The password is `UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR`.
+
 ## Level 9 -> Level 10
 `bandit9:UsvVyFSfZZWbi6wgC7dAFyFuR6jQQUhR`
 > The password for the next level is stored in the file data.txt in one of the few human-readable strings, preceded by several ‘=’ characters.
@@ -175,6 +179,8 @@ c^ LAh=3G
 S=A.H&^
 ```
 
+The password is `truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk`.
+
 ## Level 10 -> Level 11
 `bandit10:truKLdjsbJ5g7yyJ2X2R0o3a5HQJFuLk`
 > The password for the next level is stored in the file data.txt, which contains base64 encoded data
@@ -185,6 +191,8 @@ bandit10@bandit:~$ cat data.txt | base64 -d
 The password is IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR
 ```
 
+The password is `IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR`.
+
 ## Level 11 -> Level 12
 `bandit11:IFukwKGsFW8MOq3IRFqrxE1hxTNEbUPR`
 > The password for the next level is stored in the file data.txt, where all lowercase (a-z) and uppercase (A-Z) letters have been rotated by 13 positions
@@ -194,6 +202,8 @@ data.txt
 bandit11@bandit:~$ cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'
 The password is 5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu
 ```
+
+The password is `5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`.
 
 ## Level 12 -> Level 13
 `bandit12:5Te8Y4drgCRfCx8ugdwuEX8KFC6k2EUu`
